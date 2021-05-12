@@ -1,0 +1,26 @@
+<%- include("partials/header")%>
+
+<section class="cartSec1">
+  <h2>Cart</h2>
+
+  <div class="cartCon">
+
+    <% for(let product of productsList){%>
+
+      <div class="cartProduct">
+        <div class="cartProDetail">
+          <h4><%= product.title%></h4>
+          <p class="proPrice">Rs. <%= product.price%></p>
+          <p class="cartProDes"><%= product.des%></p>
+        </div>
+        <form class="cartRemBtn" action="/rmProduct" method="post">
+          <button type="submit" name="id" value=<%= product._id%>>Remove Product</button>
+        </form>
+      </div>
+
+    <%}%>
+
+  </div>
+</section>
+
+<%- include("partials/footer")%>

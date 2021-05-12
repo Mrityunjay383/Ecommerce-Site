@@ -1,0 +1,14 @@
+<%- include("partials/header")%>
+
+<section class="proSec1">
+  <h2>Products We Offer</h2>
+
+  <div class="productsCon">
+    <% for(let product of productsList){%>
+      <%- include("partials/product", {title: product.title, price: product.price, des: product.des, inCart: product.inCart, id: product._id})%>
+    <%}%>
+
+  </div>
+</section>
+
+<%- include("partials/footer")%>

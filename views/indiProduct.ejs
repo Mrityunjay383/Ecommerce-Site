@@ -1,0 +1,16 @@
+<%- include("partials/header")%>
+
+<section class="indiProSec">
+  <h2><%= product.title%></h2>
+  <p class="proPrice">Rs. <%= product.price%></p>
+  <p class="proDes indiPorDes"><%= product.des%></p>
+  <% if(product.inCart){%>
+    <a class="proBtn" href="/cart">Go to Cart</a>
+  <%}else{%>
+    <form class="" action="/addtocart" method="post">
+      <button class="proBtn" type="submit" name="title" value="<%= product._id%>">Add to Cart</button>
+    </form>
+  <%}%>
+</section>
+
+<%- include("partials/footer")%>

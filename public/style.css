@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  overflow-x: hidden;
+}
+body {
+  font-family: 'Averia Serif Libre', cursive;
+  color: #212121;
+}
+
+header {
+  padding: 3vh 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 3px 2px 1px rgba(0, 0, 0, 0.2);
+}
+header h1{
+  margin: 0;
+}
+
+ul {
+  width: 20vw;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0;
+}
+
+p {
+  font-weight: 400;
+  color: rgb(152, 151, 151);
+  line-height: 1.5;
+}
+
+/* Home Section 1*/
+.homeSec1 {
+  padding: 0 6%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeSec1 h2 {
+  font-size: 3.5rem;
+}
+
+.homeSec1 p {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.ctaBtn {
+  background-color: orange;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.ctaBtn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Products Section 1 */
+.proSec1, .addProSec1, .cartSec1, .indiProSec {
+  padding: 10vh 6%;
+  min-height: 81vh;
+}
+
+.proSec1 h2 {
+  font-size: 3.2rem;
+}
+.productsCon{
+  margin: 10vh 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product{
+  margin-right: 20px;
+  margin-bottom: 10vh;
+  width: 25vw;
+}
+.product h4, .cartProduct h4{
+  font-size: 2.9rem;
+  opacity: 0.9;
+}
+.product h4 a{
+  text-decoration: none;
+  color: #212121;
+}
+.proPrice{
+  font-size: 2rem;
+  margin: 20px 0;
+}
+.proDes{
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.proBtn{
+  padding: 10px 20px;
+  background: orange;
+  color: #fff;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+/* Cart Product Style */
+.cartCon{
+  margin: 8vh 0;
+}
+.cartProduct{
+  margin: 5vh 0 0;
+  display: flex;
+}
+.cartProDes{
+  width: 75%;
+}
+.cartRemBtn{
+  display: flex;
+  align-items: flex-end;
+}
+.cartRemBtn button{
+  width: 10vw;
+  padding: 10px 20px;
+  background: orange;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+}
+
+/* Indi Product Page */
+.indiPorDes{
+  width: 75%;
+  font-size: 1.4rem;
+}
+
+
+footer{
+  text-align: center;
+  font-size: 2rem;
+  background: orange;
+  padding: 18px 0;
+  color: #444;
+  font-weight: 400;
+}
+footer a{
+  font-size: 2.2rem;
+  color: #212121;
+  font-weight: 700;
+}

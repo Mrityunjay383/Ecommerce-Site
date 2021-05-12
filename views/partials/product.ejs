@@ -1,0 +1,13 @@
+<div class="product">
+  <h4><a href="/product/<%= title%>"><%= title%></a></h4>
+  <p class="proPrice">Rs. <%= price%></p>
+  <% des = des.substring(0, 100)%>
+  <p class="proDes"><%= des%>...</p>
+  <% if(inCart){%>
+    <a class="proBtn" href="/cart">Go to Cart</a>
+  <%}else{%>
+    <form class="" action="/addtocart" method="post">
+      <button class="proBtn" type="submit" name="id" value="<%= id%>">Add to Cart</button>
+    </form>
+  <%}%>
+</div>
